@@ -4,7 +4,9 @@
   "description": "This is a Workshop module for learning about promises in node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "q": "~0.9.7",
     "q-io": "~1.13.4",
     "node-uuid": "~1.4.1",
-    "lodash": "~2.4.1"
-  }
+    "lodash": "~2.4.1",
+    "snyk": "^1.47.0"
+  },
+  "snyk": true
 }
